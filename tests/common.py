@@ -14,7 +14,8 @@ import unittest
 CURDIR = pathlib.Path(__file__).parent
 
 
-def yml_path_itr(tcase: str, expect_success=True) -> typing.Iterator[str]:
+def yml_path_itr(tcase: str, expect_success: bool = True
+                 ) -> typing.Iterator[str]:
     """
     Yield a str represents a command to run given test case.
     """
@@ -40,7 +41,7 @@ class YamlLintTestCase(unittest.TestCase):
 
     def run_cmd(self, expect_success: bool = True):
         """
-        :param playbook_fn_patterns: Glob filenames pattern to find playbooks
+        Run yamllint.
         """
         if self.tcase is None or not self.tcase:
             return
