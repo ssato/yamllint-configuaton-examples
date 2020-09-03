@@ -5,6 +5,6 @@ yamllint-configuration-examples
    :target: https://github.com/ssato/yamllint-configuration-examples/actions?query=workflow%3ATests
    :alt: [GHA Tests]
 
-This is some example configurations of YAML Lint.
+Here are some example configurations of YAML Lint.
 
 - YAML Lint: https://github.com/adrienverge/yamllint
