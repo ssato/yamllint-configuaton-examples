@@ -1,0 +1,11 @@
+---
+# yamllint disable rule:line-length
+extends: default
+
+rules:
+  # https://yamllint.readthedocs.io/en/stable/rules.html#module-yamllint.rules.quoted_strings
+  quoted-strings:
+    quote-type: double
+    required: only-when-needed  # or set it 'true' to force that always.
+    # extra-required: ...
+    # extra-allowed: ...

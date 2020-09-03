@@ -1,0 +1,8 @@
+---
+# yamllint disable rule:line-length
+extends: default
+
+rules:
+  # https://yamllint.readthedocs.io/en/stable/rules.html#module-yamllint.rules.new_lines
+  new-lines:
+    type: unix

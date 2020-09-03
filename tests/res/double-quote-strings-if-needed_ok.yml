@@ -1,0 +1,8 @@
+---
+foo: bar
+bar: foo
+not_number: "123"
+not_boolean: "true"
+not_comment: "# comment"
+not_list: "[1, 2, 3]"
+not_map: "{a: 1, b: 2}"
