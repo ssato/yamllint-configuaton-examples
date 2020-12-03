@@ -1,0 +1,21 @@
+---
+- hosts: localhost
+  vars:
+    a:
+      b: 1
+      c:
+        x: 0o755
+        y: 755  # .. note:: This is NOT octal but decimal number.
+      d: true
+      e: "yes"
+      f: http://example.com
+  tasks:
+    debug:
+      msg: |
+        a.b: {{ a.b }}
+        a.c:
+          a.c.x: {{ a.c.x }}
+          a.c.y: {{ a.c.y }}
+        a.d: {{ a.d }}
+        a.e: {{ a.e }}
+        a.f: {{ a.f }}

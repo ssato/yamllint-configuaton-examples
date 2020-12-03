@@ -1,0 +1,21 @@
+---
+extends: default
+rules:
+  braces:
+    forbid: true
+
+  brackets:
+    forbid: true
+
+  new-line-at-end-of-file: enable  # ファイル末尾に \n 必須
+
+  new-lines:
+    type: unix  # Unix  style (\n のみ) で改行
+
+  octal-values:
+    forbid-implicit-octal: true  # 下とあわせて Octal は必ず 0o... 書式で
+    forbid-explicit-octal: false
+
+  quoted-strings:
+    quote-type: double
+    required: only-when-needed
